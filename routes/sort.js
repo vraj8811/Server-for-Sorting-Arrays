@@ -31,6 +31,13 @@ router.post('/process-single', (req, res) => {
     });
 });
 
+router.post('/hello', (req, res) => {
+
+    res.json({
+       message:"Hello from live server"
+    });
+});
+
 // End point for Concurrent sorting function
 router.post('/process-concurrent', async (req, res) => {
     const { to_sort } = req.body;
